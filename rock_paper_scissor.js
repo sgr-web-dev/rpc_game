@@ -11,7 +11,7 @@ function resetScore(){
 
  function playGame(playerMove){   
   const randomNumber = Math.random();
-  const computerMove = (randomNumber<1/3)?'Rock':(randomNumber<2/3)?'Paper':'Scissor';
+    const computerMove = (randomNumber<1/18)?'Rock':(randomNumber<2/18)?'Paper':(randomNumber<3/18)?'Scissor':(randomNumber<4/18)?'Paper':(randomNumber<5/18)?'Scissor':(randomNumber<6/18)?'Paper':(randomNumber<7/18)?'Scissor':(randomNumber<8/18)?'Rock':(randomNumber<9/18)?'Scissor':(randomNumber<10/18)?'Rock':(randomNumber<11/18)?'Paper':(randomNumber<12/18)?'Rock':(randomNumber<13/18)?'Scissor':(randomNumber<14/18)?'Paper':(randomNumber<15/18)?'Rock':(randomNumber<16/18)?'Paper':(randomNumber<17/18)?'Scissor':'';
 
 let result='';
   if(playerMove==='Rock'){
