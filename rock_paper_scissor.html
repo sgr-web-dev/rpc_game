@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- //Game producer -- Sagar Bisht(SGR) -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="icon" href="/Rock_Paper_Scissor/rock_paper-scissor_images/logo.png" type="image/icon type">
+  <link rel="stylesheet" href="rock_paper_scissor.css">
+</head>
+<body>
+
+<p class="page-heading">Rock Paper Scissors</p>
+<div class="btn-container">
+<button class="ply-btn" onclick="playGame('Rock');">
+  <img src="rock_paper-scissor_images/Rock-emoji.png" class="ply-move">
+</button>
+
+<button class="ply-btn" onclick="playGame('Paper')">
+  <img src="rock_paper-scissor_images/Paper-emoji.png" class="ply-move">
+</button>
+
+<button class="ply-btn" onclick="playGame('Scissor')">
+  <img src="rock_paper-scissor_images/Scissor-emoji.png" class="ply-move">
+</button>
+</div>
+<div class="para-container">
+<p class="js-game-result result"></p>
+<p class="js-computermove-playermove"></p>
+<p class="js-display-score score"></p>
+
+<button class="reset-btn" onclick="resetScore()">Reset Score</button>
+</div>
+<script src="rock_paper_scissor.js"></script>
+  
+</body>
+</html>
